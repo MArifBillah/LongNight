@@ -28,7 +28,7 @@ public class floatScript : MonoBehaviour
         onWater = Physics.Raycast(transform.position, Vector3.down, playerHeight*0.5f+0.2f, whatIsWater);
         if(onWater)
         {
-            print("you are on water");
+            // print("you are on water");
             currentAcc = acceleration * Input.GetAxis("Vertical");
             if(Input.GetKey(KeyCode.Space))
             {
@@ -48,7 +48,7 @@ public class floatScript : MonoBehaviour
             frontRight.steerAngle = currentTurnAngle;
             frontLeft.steerAngle = currentTurnAngle; 
         }else{
-            print("you are not on water");
+            // print("you are not on water");
         }
 
     }
