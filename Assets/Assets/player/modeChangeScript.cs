@@ -24,12 +24,12 @@ public class modeChangeScript : MonoBehaviour
         {  
             if(boatMode.activeSelf)
             {
-                boatPosition.transform.position = boatPosition.transform.position;
+                playerPosition.transform.position = boatPosition.transform.position;
             }
 
             if(bikeMode.activeSelf)
             {
-                boatPosition.transform.position = bikePosition.transform.position;
+                playerPosition.transform.position = bikePosition.transform.position;
             }            
             // playerPosition.transform.position = transform.position;
             boatMode.SetActive(false);
@@ -43,12 +43,12 @@ public class modeChangeScript : MonoBehaviour
 
             if(playerMode.activeSelf)
             {
-                boatPosition.transform.position = playerPosition.transform.position;
+                bikePosition.transform.position = playerPosition.transform.position;
             }
 
             if(boatMode.activeSelf)
             {
-                boatPosition.transform.position = boatPosition.transform.position;
+                bikePosition.transform.position = boatPosition.transform.position;
             }
             
             // bikePosition.transform.position = transform.position;

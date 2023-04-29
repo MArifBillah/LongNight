@@ -6,6 +6,7 @@ public class goalScript : MonoBehaviour
 {
     public GameObject gameManager;
     public GameObject parent;
+    // public GameObject destroyObject;
     
     void Start()
     {
@@ -18,7 +19,9 @@ public class goalScript : MonoBehaviour
         {
             gameManager.GetComponent<score>().point += 1;
             gameManager.GetComponent<score>().goalSpawned -= 1;
-            Destroy(parent);
+            // goalMarker.SetActive(false);
+            parent.GetComponent<goalMarker>().destroyed = true;
+            // goalMarker.remove()
         }
     }
 }
