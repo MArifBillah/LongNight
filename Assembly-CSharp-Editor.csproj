@@ -336,14 +336,32 @@
     <Reference Include="Unity.VisualScripting.YamlDotNet">
         <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Mdb">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.barracuda@3.0.0\Barracuda\Runtime\Plugins\ProtoBuffer\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
         <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
         <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -741,8 +759,17 @@
     <Reference Include="UnityEditor.TestRunner">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Barracuda.ONNX">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda.iOSBLAS">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda.BurstBLAS">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
@@ -759,6 +786,9 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Barracuda">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
@@ -770,6 +800,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -801,6 +834,9 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TerrainTools">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
     </Reference>
@@ -809,6 +845,9 @@
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
@@ -825,8 +864,17 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda.Editor">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda.MacBLAS">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>

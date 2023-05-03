@@ -24,7 +24,7 @@ public class raycastSpawner : MonoBehaviour
         {
             GameObject clone = Instantiate(itemsToSpread, hit.point, Quaternion.identity);
         }
-        else if (itemsToSpread.name == "goal")
+        else if (itemsToSpread.name == "goal" || itemsToSpread.tag == "enemy")
         {
             print("Di spawn tapi kena air");
              GameObject clone = Instantiate(itemsToSpread, hit.point, Quaternion.identity);

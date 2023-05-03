@@ -68,7 +68,7 @@ public class generateTerrainScript : MonoBehaviour
                 heightValue *= heightScale;
                 heightValue += 1;
                 heights[y, x] = heightValue;
-                print("this is the height value ="+heightValue);
+                // print("this is the height value ="+heightValue);
             }
         }
 

@@ -427,6 +427,7 @@
 "Assets/Assets/cameraFollow.cs"
 "Assets/Assets/compass/compasScript.cs"
 "Assets/Assets/compass/goalMarker.cs"
+"Assets/Assets/enemy/enemyScript.cs"
 "Assets/Assets/ganModelScript.cs"
 "Assets/Assets/generateTerrain/generateTerrainScript.cs"
 "Assets/Assets/goal/goalItemAcquired.cs"

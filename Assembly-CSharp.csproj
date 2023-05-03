@@ -45,6 +45,7 @@
      <Compile Include="Assets\Assets\Bike\BikeController.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\VignetteComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\Assets\ganModelScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
@@ -67,6 +68,7 @@
      <Compile Include="Assets\Assets\cameraFollow.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\Assets\ProceduralTreeAndStuffs\grassGenerator.cs" />
+     <Compile Include="Assets\Assets\enemy\enemyScript.cs" />
      <Compile Include="Assets\Assets\player\playerMovement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\DynamicSkyForDemo.cs" />
@@ -88,8 +90,8 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Assets\goal\raycastGoalSpawnerScript.cs" />
      <Compile Include="Assets\Assets\goal\goalScript.cs" />
-     <Compile Include="Assets\Assets\compass\compasScript.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\Assets\compass\compasScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
@@ -137,7 +139,6 @@
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BloomModel.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Assets\ganModelScript.cs" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\Water Specular.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -200,6 +201,7 @@
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\TAA.cginc" />
+     <None Include="Assets\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -208,6 +210,7 @@
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ACES.cginc" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\Hovl Studio\Procedural fire\Demo scene\Readme.txt" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\FXAA.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\NvWaters.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
@@ -455,15 +458,6 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
         <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
@@ -481,6 +475,15 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
         <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -848,8 +851,17 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Barracuda.ONNX">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda.iOSBLAS">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda.BurstBLAS">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
@@ -866,6 +878,9 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Barracuda">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
@@ -877,6 +892,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -908,6 +926,9 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TerrainTools">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
     </Reference>
@@ -916,6 +937,9 @@
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
@@ -932,41 +956,20 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Barracuda.BurstBLAS">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.BurstBLAS.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Barracuda">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Barracuda.ONNX">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.ONNX.dll</HintPath>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda.Editor">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Barracuda.iOSBLAS">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.iOSBLAS.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Barracuda.MacBLAS">
         <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Barracuda.MacBLAS.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Editor">
-        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.State">
+        <HintPath>H:\Skripsi\Skripsi baru\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
