@@ -118,6 +118,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -347,6 +348,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.ref.dll"
@@ -428,6 +431,7 @@
 "Assets/Assets/compass/compasScript.cs"
 "Assets/Assets/compass/goalMarker.cs"
 "Assets/Assets/enemy/enemyScript.cs"
+"Assets/Assets/flamable/flamableScript.cs"
 "Assets/Assets/ganModelScript.cs"
 "Assets/Assets/generateTerrain/generateTerrainScript.cs"
 "Assets/Assets/goal/goalItemAcquired.cs"
@@ -435,12 +439,14 @@
 "Assets/Assets/goal/goalSpawner.cs"
 "Assets/Assets/goal/raycastGoalSpawnerScript.cs"
 "Assets/Assets/goal/score.cs"
+"Assets/Assets/interfaceController.cs"
 "Assets/Assets/player/cameraHolder.cs"
 "Assets/Assets/player/cameraScript.cs"
 "Assets/Assets/player/modeChangeScript.cs"
 "Assets/Assets/player/playerMovement.cs"
 "Assets/Assets/ProceduralTreeAndStuffs/grassGenerator.cs"
 "Assets/Assets/raycastSpawner.cs"
+"Assets/Assets/timerScript.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

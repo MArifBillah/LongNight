@@ -17,6 +17,9 @@ public class playerMovement : MonoBehaviour
    public float airMultiplier;
    bool readyToJump = true;
 
+    //for torch
+    public bool isTorching;
+    public GameObject torch;
 
    Vector3 moveDirection;
 
@@ -34,6 +37,7 @@ public class playerMovement : MonoBehaviour
    {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        isTorching = true;
    }
 
    private void FixedUpdate()
@@ -43,6 +47,16 @@ public class playerMovement : MonoBehaviour
 
    private void Update()
    {
+    if(Input.GetKeyDown(KeyCode.E) && isTorching)
+    {
+        isTorching = false;
+        torch.SetActive(false);
+    }
+    else if (Input.GetKeyDown(KeyCode.E) && !isTorching)
+    {
+        isTorching = true;
+        torch.SetActive(true);
+    }
     // ground check
     grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight*0.5f+0.2f, whatIsGround);
     MyInput();

@@ -28,6 +28,7 @@ public class enemyScript : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            print("Player inside enemy range");
             isInDanger = false;
             isDamaging = false;
         }
@@ -51,7 +52,7 @@ public class enemyScript : MonoBehaviour
     private IEnumerator WaitAndPrint(float waitTime)
     {
             isInDanger =false;
-            Debug.Log("Started Coroutine at timestamp : " + Time.time);
+            // Debug.Log("Started Coroutine at timestamp : " + Time.time);
             yield return new WaitForSeconds(waitTime);
             Debug.Log("Finished Coroutine at timestamp : " + Time.time);
             gameManager.GetComponent<score>().playerHealth--;

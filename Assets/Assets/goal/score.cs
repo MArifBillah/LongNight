@@ -12,6 +12,8 @@ public class score : MonoBehaviour
     public int playerHealth;
     public Slider healthSlider;
 
+    // final score for winning
+    public int finalScore;
     void Start()
     {
         playerHealth=100;
@@ -33,5 +35,20 @@ public class score : MonoBehaviour
     {
         playerUI.SetActive(false);
         winState.SetActive(true);
+        float time = gameObject.GetComponent<timerScript>().timeCount;
+        int timeInt = Mathf.RoundToInt(time);
+        if(time<600)
+        {
+            finalScore = playerHealth-10;
+        }
+        //lanjutkan nanti
+    }
+
+    void playerLose()
+    {
+        if(playerHealth<1)
+        {
+            //playerlose UI here
+        }
     }
 }
