@@ -440,6 +440,7 @@
 "Assets/Assets/goal/raycastGoalSpawnerScript.cs"
 "Assets/Assets/goal/score.cs"
 "Assets/Assets/interfaceController.cs"
+"Assets/Assets/menuController.cs"
 "Assets/Assets/player/cameraHolder.cs"
 "Assets/Assets/player/cameraScript.cs"
 "Assets/Assets/player/modeChangeScript.cs"

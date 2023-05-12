@@ -12,6 +12,7 @@ public class goalMarker : MonoBehaviour
     GameObject destroyIcon;
     public bool destroyed;
     public GameObject compass;
+    public static int countTheGoal;
 
     public Vector2 position{
         get {return new Vector2 (transform.position.x, transform.position.z);}
@@ -19,10 +20,16 @@ public class goalMarker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // compasScript = 
         destroyed = false;
-        if(gameObject.name != "goal"){
-            destroyIcon = compasScript.GetComponent<compasScript>().AddGoalMarker(theMarker);
-        }
+        countTheGoal++;
+        
+            if(gameObject.name != "goal"){
+                destroyIcon = compasScript.GetComponent<compasScript>().AddGoalMarker(theMarker);
+            }
+        
+        
+
         
         
     }
@@ -30,16 +37,16 @@ public class goalMarker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(destroyed);
+        // print(destroyed);
         if(destroyed)
         {
             
             destroyIcon.SetActive(false);
-            // goalMarkers.Remove(theMarker)
-            print("this is in the list =");
+            
+            // print("this is in the list =");
             compass.GetComponent<compasScript>().reduceMarker(theMarker);
             destroyThisObject();
-            print("target been destroyed");
+            // print("target been destroyed");
         }
     }
 

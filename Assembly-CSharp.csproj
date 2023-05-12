@@ -48,6 +48,7 @@
      <Compile Include="Assets\Assets\ganModelScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+     <Compile Include="Assets\Assets\timerScript.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
      <Compile Include="Assets\Assets\interfaceController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\Assets\player\playerMovement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\DynamicSkyForDemo.cs" />
+     <Compile Include="Assets\Assets\menuController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
@@ -141,7 +143,6 @@
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BloomModel.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Assets\timerScript.cs" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\Water Specular.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -153,6 +154,7 @@
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\Scenes\UI\dark_elegance\README.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
@@ -162,6 +164,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\Scenes\UI\dark_elegance\log.txt" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -187,9 +190,11 @@
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\UI\Trackball.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\Scenes\UI\dark_elegance\traceback.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\Scenes\UI\dark_elegance\game\cache\shaders.txt" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
      <None Include="Assets\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\Water Surface.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -197,6 +202,7 @@
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\Environment\Rainbow\Materials\No Fog.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\LutGen.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+     <None Include="Assets\Scenes\UI\dark_elegance\errors.txt" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
      <None Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />

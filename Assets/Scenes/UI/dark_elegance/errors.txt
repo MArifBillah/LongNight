@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 315: u'return' is not a keyword argument or valid child for the textbutton statement.
+    textbutton _("Return") action Return() xalign 1.0 yalign 0.9 style return
+                                                                             ^
+
+Ren'Py Version: Ren'Py 7.4.6.1693
+Tue May 31 16:11:57 2022

@@ -2,20 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class score : MonoBehaviour
 {
     public int point;
     public int goalSpawned;
     public GameObject winState;
+    public GameObject loseState;
     public GameObject playerUI;
     public int playerHealth;
     public Slider healthSlider;
 
     // final score for winning
-    public int finalScore;
+    public float finalScore;
+    public TMP_Text scoreText;
+    public TMP_Text timerText;
+    bool winning;
     void Start()
     {
+        winning = false;
         playerHealth=100;
     }
     void Update()
@@ -23,25 +29,49 @@ public class score : MonoBehaviour
         healthSlider.value = playerHealth;
         print("current score is "+point);
          print("Goal spawned is "+goalSpawned);
-         if(point == 3)
+         if(point == 3 && winning = false)
          {
+            Time.timeScale = 0;
             playerWin();
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            winning = true;
+            // Cursor.lockState = CursorLockMode.None;
+            // Cursor.visible = true;
          }
     }
 
     void playerWin()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
         playerUI.SetActive(false);
         winState.SetActive(true);
         float time = gameObject.GetComponent<timerScript>().timeCount;
-        int timeInt = Mathf.RoundToInt(time);
-        if(time<600)
+        
+        
+        //win score
+        finalScore = playerHealth/(time/100);
+        int displayScore = Mathf.RoundToInt(finalScore);
+        scoreText.text = displayScore.ToString();
+        timerText.text = time.ToString();
+
+        if(PlayerPrefs.HasKey("HighScore"))
         {
-            finalScore = playerHealth-10;
+            int savedScore = PlayerPrefs.GetInt("HighScore");
+            if(displayScore>savedScore)
+            {
+                PlayerPrefs.SetInt("HighScore", displayScore);
+                PlayerPrefs.SetFloat("BestTime",time);
+            }
         }
-        //lanjutkan nanti
+        else
+        {
+            PlayerPrefs.SetInt("HighScore", displayScore);
+            PlayerPrefs.SetFloat("BestTime",time);
+        }
+        
+        print("Highest Score now : "+PlayerPrefs.GetInt("HighScore"));
+        
     }
 
     void playerLose()
@@ -49,6 +79,8 @@ public class score : MonoBehaviour
         if(playerHealth<1)
         {
             //playerlose UI here
+            Time.timeScale = 0;
+            loseState.SetActive(true);
         }
     }
 }
