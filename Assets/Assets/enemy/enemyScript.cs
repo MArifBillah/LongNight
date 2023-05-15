@@ -5,6 +5,7 @@ using UnityEngine;
 public class enemyScript : MonoBehaviour
 {
     public GameObject gameManager;
+    public GameObject player;
     private bool isInDanger = false;
     private bool isDamaging = false;
     // Start is called before the first frame update
@@ -28,7 +29,7 @@ public class enemyScript : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            print("Player inside enemy range");
+            // print("Player inside enemy range");
             isInDanger = false;
             isDamaging = false;
         }
@@ -54,8 +55,16 @@ public class enemyScript : MonoBehaviour
             isInDanger =false;
             // Debug.Log("Started Coroutine at timestamp : " + Time.time);
             yield return new WaitForSeconds(waitTime);
-            Debug.Log("Finished Coroutine at timestamp : " + Time.time);
-            gameManager.GetComponent<score>().playerHealth--;
+            // Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+            if(player.GetComponent<playerMovement>().isTorching == true)
+            {
+                gameManager.GetComponent<score>().playerHealth-=5;
+            }
+            else
+            {
+                gameManager.GetComponent<score>().playerHealth-=10;
+            } 
+            
             isInDanger=true;
     }
 }

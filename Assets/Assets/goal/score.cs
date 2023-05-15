@@ -29,13 +29,18 @@ public class score : MonoBehaviour
         healthSlider.value = playerHealth;
         print("current score is "+point);
          print("Goal spawned is "+goalSpawned);
-         if(point == 3 && winning = false)
+         if(point == 3 && !winning)
          {
             Time.timeScale = 0;
             playerWin();
             winning = true;
             // Cursor.lockState = CursorLockMode.None;
             // Cursor.visible = true;
+         }
+
+         if(playerHealth<1)
+         {
+            playerLose();
          }
     }
 

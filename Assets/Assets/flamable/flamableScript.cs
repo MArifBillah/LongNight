@@ -6,6 +6,7 @@ public class flamableScript : MonoBehaviour
 {
     public GameObject player;
     public GameObject gameManager;
+    public GameObject flame;
     private bool isInDanger = false;
     private bool isDamaging = false;
     private bool isBurning = false;
@@ -21,6 +22,7 @@ public class flamableScript : MonoBehaviour
         {
             isInDanger = true;
             isDamaging = true;
+            
 
         }
             
@@ -46,6 +48,7 @@ public class flamableScript : MonoBehaviour
             if(player.GetComponent<playerMovement>().isTorching == true)
             {
                 isBurning = true;
+                flame.SetActive(true);
             }   
 
             if(isBurning)
