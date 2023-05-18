@@ -27,8 +27,8 @@ public class score : MonoBehaviour
     void Update()
     {
         healthSlider.value = playerHealth;
-        print("current score is "+point);
-         print("Goal spawned is "+goalSpawned);
+        // print("current score is "+point);
+        //  print("Goal spawned is "+goalSpawned);
          if(point == 3 && !winning)
          {
             Time.timeScale = 0;
@@ -75,7 +75,7 @@ public class score : MonoBehaviour
             PlayerPrefs.SetFloat("BestTime",time);
         }
         
-        print("Highest Score now : "+PlayerPrefs.GetInt("HighScore"));
+        // print("Highest Score now : "+PlayerPrefs.GetInt("HighScore"));
         
     }
 

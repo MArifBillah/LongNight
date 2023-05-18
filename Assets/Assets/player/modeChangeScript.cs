@@ -10,6 +10,7 @@ public class modeChangeScript : MonoBehaviour
     public GameObject bikePosition;
     public GameObject playerPosition;
     public GameObject boatPosition;
+    public GameObject fixRotation;
     
     // Update is called once per frame
     void Start()
@@ -44,11 +45,13 @@ public class modeChangeScript : MonoBehaviour
             if(playerMode.activeSelf)
             {
                 bikePosition.transform.position = playerPosition.transform.position;
+                bikePosition.transform.rotation = fixRotation.transform.rotation;
             }
 
             if(boatMode.activeSelf)
             {
                 bikePosition.transform.position = boatPosition.transform.position;
+                
             }
             
             // bikePosition.transform.position = transform.position;
@@ -64,6 +67,7 @@ public class modeChangeScript : MonoBehaviour
             {
                 boatPosition.transform.position = playerPosition.transform.position;
                 boatPosition.transform.rotation = Quaternion.identity;
+                boatPosition.transform.rotation = fixRotation.transform.rotation;
             }
 
             if(bikeMode.activeSelf)

@@ -30,8 +30,6 @@ public class generateTerrainScript : MonoBehaviour
     void LoadTerrain(TerrainData terrainData, float heightScale)
     {
         Tensor input = new Tensor(1, 1, 1, 128); 
-        // m_Worker.Execute(input);
-        // input.Dispose();
 
         var mean = 0f;
         var stdDev = 1f;
@@ -74,6 +72,7 @@ public class generateTerrainScript : MonoBehaviour
 
         terrainData.SetHeights(0, 0, heights);
         O.Dispose();
+        // ComputeBuffer.Dispose();
     }
     
 }

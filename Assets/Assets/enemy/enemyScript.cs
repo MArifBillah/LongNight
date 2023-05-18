@@ -8,6 +8,7 @@ public class enemyScript : MonoBehaviour
     public GameObject player;
     private bool isInDanger = false;
     private bool isDamaging = false;
+    public GameObject enemyAnimation;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,8 @@ public class enemyScript : MonoBehaviour
         {
             isInDanger = true;
             isDamaging = true;
+            enemyAnimation.SetActive(true);
+            transform.LookAt(other.transform);
         }
             
             
@@ -32,6 +35,7 @@ public class enemyScript : MonoBehaviour
             // print("Player inside enemy range");
             isInDanger = false;
             isDamaging = false;
+            enemyAnimation.SetActive(false);
         }
             
     }
