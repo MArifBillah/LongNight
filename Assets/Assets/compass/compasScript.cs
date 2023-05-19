@@ -31,14 +31,10 @@ public class compasScript : MonoBehaviour
     {
         
         compassImage.uvRect = new Rect (player.localEulerAngles.y/360f, 0f, 1f, 1f);
-        // int countTheList   
+        
         foreach(goalMarker marker in goalMarkers){
             marker.image.rectTransform.anchoredPosition = GetPosOnCompass(marker);
-            // float dst = Vector2.Distance(new Vector2(player.transform.position.x, player.transform.position.z), marker.position);
-            // if(dst == 0)
-            // {
-            //     marker.enabled = !marker.image.enabled;
-            // }
+        
         }
         
     }

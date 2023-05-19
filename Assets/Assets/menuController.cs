@@ -13,6 +13,13 @@ public class menuController : MonoBehaviour
 
     public void startGame()
     {
+        goalMarker.countTheGoal=0;
+        compasScript.goalMarkers.Clear();
         SceneManager.LoadScene(1);
+    }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

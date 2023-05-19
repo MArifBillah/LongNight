@@ -17,9 +17,10 @@ public class playerMovement : MonoBehaviour
    public float airMultiplier;
    bool readyToJump = true;
 
-    //for torch
+    [Header("Torch Control")]
     public bool isTorching;
     public GameObject torch;
+    public AudioSource torchSound;
 
    Vector3 moveDirection;
 
@@ -51,11 +52,15 @@ public class playerMovement : MonoBehaviour
     {
         isTorching = false;
         torch.SetActive(false);
+        torchSound.Stop();
+        enemyScript.canBeDamaged = true;
     }
     else if (Input.GetKeyDown(KeyCode.E) && !isTorching)
     {
         isTorching = true;
         torch.SetActive(true);
+        torchSound.Play();
+        enemyScript.canBeDamaged = false;
     }
     // ground check
     grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight*0.5f+0.2f, whatIsGround);
@@ -68,6 +73,7 @@ public class playerMovement : MonoBehaviour
     }else
     {
         rb.drag = 0;
+        moveSpeed = 5;
     }
 
    }

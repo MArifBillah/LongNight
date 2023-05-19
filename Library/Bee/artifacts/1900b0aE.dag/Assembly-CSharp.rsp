@@ -445,6 +445,7 @@
 "Assets/Assets/player/cameraScript.cs"
 "Assets/Assets/player/modeChangeScript.cs"
 "Assets/Assets/player/playerMovement.cs"
+"Assets/Assets/player/torchScript.cs"
 "Assets/Assets/ProceduralTreeAndStuffs/grassGenerator.cs"
 "Assets/Assets/raycastSpawner.cs"
 "Assets/Assets/timerScript.cs"

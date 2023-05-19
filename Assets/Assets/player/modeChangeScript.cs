@@ -41,7 +41,7 @@ public class modeChangeScript : MonoBehaviour
         //Bike mode
         if(Input.GetKey(KeyCode.Alpha2) && bikeMode.activeSelf == false)
         {
-
+            enemyScript.canBeDamaged = true;
             if(playerMode.activeSelf)
             {
                 bikePosition.transform.position = playerPosition.transform.position;
@@ -63,6 +63,7 @@ public class modeChangeScript : MonoBehaviour
         //Boat mode
         if(Input.GetKey(KeyCode.Alpha3) && boatMode.activeSelf == false)
         {
+            enemyScript.canBeDamaged = true;
             if(playerMode.activeSelf)
             {
                 boatPosition.transform.position = playerPosition.transform.position;

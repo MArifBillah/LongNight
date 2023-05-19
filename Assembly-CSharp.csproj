@@ -47,6 +47,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Assets\ganModelScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\Assets\player\torchScript.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
      <Compile Include="Assets\Assets\timerScript.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />

@@ -9,6 +9,7 @@ public class goalMarker : MonoBehaviour
     public Image image;
     public GameObject compasScript;
     public goalMarker theMarker;
+    public GameObject markerObject;
     GameObject destroyIcon;
     public bool destroyed;
     public GameObject compass;
@@ -17,21 +18,21 @@ public class goalMarker : MonoBehaviour
     public Vector2 position{
         get {return new Vector2 (transform.position.x, transform.position.z);}
     }
+    int counter;
     // Start is called before the first frame update
     void Start()
     {
         // compasScript = 
         destroyed = false;
         countTheGoal++;
+        counter = countTheGoal;
+        print("Jumlah goal yang muncul="+countTheGoal);
         
-            if(gameObject.name != "goal"){
+            if(markerObject.name != "goal"){
                 destroyIcon = compasScript.GetComponent<compasScript>().AddGoalMarker(theMarker);
+                print("testing destroyicon");
             }
-        
-        
 
-        
-        
     }
 
     // Update is called once per frame
@@ -40,6 +41,7 @@ public class goalMarker : MonoBehaviour
         // print(destroyed);
         if(destroyed)
         {
+            print("testing destroyed = "+markerObject.name+" nomor ke="+counter);
             
             destroyIcon.SetActive(false);
             

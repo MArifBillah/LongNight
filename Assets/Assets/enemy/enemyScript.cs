@@ -9,20 +9,25 @@ public class enemyScript : MonoBehaviour
     private bool isInDanger = false;
     private bool isDamaging = false;
     public GameObject enemyAnimation;
+    public AudioSource jscareSound;
+    public static bool canBeDamaged;
+    Transform playerLocation;
     // Start is called before the first frame update
     void Start()
     {
-        
+        canBeDamaged = true;
     }
     void OnTriggerEnter(Collider other)
     {
         
         if(other.tag == "Player")
         {
+            playerLocation = other.transform;
             isInDanger = true;
             isDamaging = true;
             enemyAnimation.SetActive(true);
-            transform.LookAt(other.transform);
+            // transform.LookAt(playerLocation);
+            jscareSound.Play();
         }
             
             
@@ -41,10 +46,11 @@ public class enemyScript : MonoBehaviour
     }
     private IEnumerator coroutine;
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
+        transform.LookAt(playerLocation);
         
-        if(isInDanger && isDamaging)
+        if(isInDanger && isDamaging && canBeDamaged)
         {
             coroutine = WaitAndPrint(2.0f);
             StartCoroutine(coroutine);

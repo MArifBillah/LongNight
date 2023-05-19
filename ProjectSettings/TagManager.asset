@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemy
   - compass
+  - enemyMesh
   layers:
   - Default
   - TransparentFX

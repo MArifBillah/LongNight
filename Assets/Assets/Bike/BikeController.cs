@@ -11,7 +11,9 @@ public class BikeController : MonoBehaviour
     [SerializeField] Transform frontTransform;
     [SerializeField] Transform backTransform;
 
-    
+    public LayerMask whatIsGround;
+    bool grounded;
+    public float playerHeight=2f;
     public float acceleration = 500f;
     public float brakingForce = 300f;
 
@@ -38,12 +40,15 @@ public class BikeController : MonoBehaviour
 
 
 
-    void FixedUpdate()
+    void Update()
     {
-        // Control the bike with W & S
-        currentAcc = acceleration * Input.GetAxis("Vertical");
-        // float xRotation = Input.GetAxis("Vertical");
-        
+        // grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight*0.5f+0.2f, whatIsGround);
+        // print(grounded);
+        // if(grounded)
+        // {    
+            // Control the bike with W & S
+            currentAcc = acceleration * Input.GetAxis("Vertical");  
+        // } 
         
         if(Input.GetKey(KeyCode.LeftShift))
         {

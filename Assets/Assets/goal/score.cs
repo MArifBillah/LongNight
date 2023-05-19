@@ -27,15 +27,11 @@ public class score : MonoBehaviour
     void Update()
     {
         healthSlider.value = playerHealth;
-        // print("current score is "+point);
-        //  print("Goal spawned is "+goalSpawned);
          if(point == 3 && !winning)
          {
             Time.timeScale = 0;
             playerWin();
             winning = true;
-            // Cursor.lockState = CursorLockMode.None;
-            // Cursor.visible = true;
          }
 
          if(playerHealth<1)
@@ -83,6 +79,8 @@ public class score : MonoBehaviour
     {
         if(playerHealth<1)
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             //playerlose UI here
             Time.timeScale = 0;
             loseState.SetActive(true);

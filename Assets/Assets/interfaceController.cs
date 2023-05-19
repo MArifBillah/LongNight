@@ -11,6 +11,7 @@ public class interfaceController : MonoBehaviour
     void Start()
     {
         isPaused = false;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -30,13 +31,17 @@ public class interfaceController : MonoBehaviour
 
     void PauseGame ()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         playerUI.SetActive(false);
         pauseUI.SetActive(true);
         Time.timeScale = 0;
     }
 
-    void ResumeGame ()
+    public void ResumeGame ()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         pauseUI.SetActive(false);
         playerUI.SetActive(true);
         Time.timeScale = 1;

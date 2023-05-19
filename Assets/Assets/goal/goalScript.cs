@@ -6,6 +6,7 @@ public class goalScript : MonoBehaviour
 {
     public GameObject gameManager;
     public GameObject parent;
+    public AudioSource collectSound;
     // public GameObject destroyObject;
     
     void Start()
@@ -21,6 +22,7 @@ public class goalScript : MonoBehaviour
             gameManager.GetComponent<score>().goalSpawned -= 1;
             // goalMarker.SetActive(false);
             parent.GetComponent<goalMarker>().destroyed = true;
+            collectSound.Play();
             // goalMarker.remove()
         }
     }
