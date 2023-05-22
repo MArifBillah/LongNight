@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/mainMenu.unity
     guid: 678498e2d0f882148b7691c954070b9f
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/procedural.unity
+    guid: d6956a12edbe9c6409ab2e5c071e3cd6
+  - enabled: 1
+    path: Assets/Scenes/Swampy.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/river.unity
+    guid: 25af5eea359e39c49a38ddc4f04677a8
+  - enabled: 1
+    path: Assets/Scenes/lake.unity
+    guid: 49a6f2c4dfdd7ec4f92ffe7e20a62652
+  - enabled: 1
+    path: Assets/Scenes/forest.unity
+    guid: db804e5530335994f980bbaaec13bb33
+  - enabled: 1
+    path: Assets/Scenes/flooded.unity
+    guid: f26ae15be985b33419132659dd6d1a47
   m_configObjects: {}

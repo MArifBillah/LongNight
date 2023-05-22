@@ -42,7 +42,7 @@ public class generateTerrainScript : MonoBehaviour
                                    Math.Sin(2.0 * Math.PI * u2); //random normal(0,1)
             double randNormal =
                 mean + stdDev * randStdNormal; //random normal(mean,stdDev^2)
-            input[i] = (float)randNormal*Random.Range(-1f,1f)*(-1f);
+            input[i] = (float)randNormal*Random.Range(-1f,1f);
             
         }
         
