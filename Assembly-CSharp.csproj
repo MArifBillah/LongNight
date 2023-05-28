@@ -110,6 +110,7 @@
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BloomComponent.cs" />
      <Compile Include="Assets\Assets\raycastSpawner.cs" />
+     <Compile Include="Assets\Assets\player\destroySpawn.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\Lighthouse.cs" />
      <Compile Include="Assets\Assets\player\cameraHolder.cs" />
@@ -135,6 +136,7 @@
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FogComponent.cs" />
      <Compile Include="Assets\Assets\flamable\flamableScript.cs" />
+     <Compile Include="Assets\Assets\tutorialScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />

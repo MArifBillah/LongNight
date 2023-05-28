@@ -11,7 +11,7 @@ public class interfaceController : MonoBehaviour
     void Start()
     {
         isPaused = false;
-        Time.timeScale = 1;
+        // Time.timeScale = 1;
     }
 
     // Update is called once per frame
