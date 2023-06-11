@@ -41,6 +41,11 @@ public class enemyScript : MonoBehaviour
             isInDanger = false;
             isDamaging = false;
             enemyAnimation.SetActive(false);
+            // if(gameManager.GetComponent<score>().playerHealth<100)
+            // {
+            //     gameManager.GetComponent<score>().playerHealth+=3;
+            // }
+            
         }
             
     }
@@ -66,11 +71,11 @@ public class enemyScript : MonoBehaviour
             // Debug.Log("Started Coroutine at timestamp : " + Time.time);
             yield return new WaitForSeconds(waitTime);
             // Debug.Log("Finished Coroutine at timestamp : " + Time.time);
-            if(player.GetComponent<playerMovement>().isTorching == true)
+            if(player.GetComponent<playerMovement>().isTorching == true && isDamaging)
             {
                 gameManager.GetComponent<score>().playerHealth-=5;
             }
-            else
+            else if(player.GetComponent<playerMovement>().isTorching == false && isDamaging)
             {
                 gameManager.GetComponent<score>().playerHealth-=10;
             } 

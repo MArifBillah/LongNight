@@ -70,6 +70,19 @@ public class score : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", displayScore);
             PlayerPrefs.SetFloat("BestTime",time);
         }
+
+        if(PlayerPrefs.HasKey("currency"))
+        {
+            int currency = PlayerPrefs.GetInt("currency");
+            currency += displayScore;
+            PlayerPrefs.SetInt("currency", currency);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("currency", displayScore);
+        }
+
+        
         
         // print("Highest Score now : "+PlayerPrefs.GetInt("HighScore"));
         

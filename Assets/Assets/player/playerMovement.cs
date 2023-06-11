@@ -31,7 +31,7 @@ public class playerMovement : MonoBehaviour
    [Header("Ground Check")]
    public float playerHeight;
    public LayerMask whatIsGround;
-   bool grounded;
+   public static bool grounded;
 
 
    private void Start()
@@ -48,6 +48,7 @@ public class playerMovement : MonoBehaviour
 
    private void Update()
    {
+    // turning torch on and off, this is crucial as there's a box collision to prevent enemy from doing any damage if the torch is active
     if(Input.GetKeyDown(KeyCode.E) && isTorching)
     {
         isTorching = false;
@@ -67,6 +68,7 @@ public class playerMovement : MonoBehaviour
     MyInput();
     speedControl();
 
+    // Reduce movement speed when not on ground
     if(grounded)
     {
         rb.drag = groundDrag;
@@ -80,6 +82,7 @@ public class playerMovement : MonoBehaviour
 
    private void MyInput()
    {
+    // this is where you control the character with WASD, and jump with space
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
